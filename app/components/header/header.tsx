@@ -11,7 +11,7 @@ const watsapp ='https://wa.me/79341004777'
 
 export
   function Header() {
-    return <header id="homeAnchor" className="h-[10vh] text-white flex justify-between items-end">
+    return <header id="homeAnchor" className="h-[10vh] flex justify-between items-end">
       <div className="flex gap-6">
       <nav className="flex gap-4 items-end">
         <Link href={"#homeAnchor"}><h1 className="text-3xl ml-2">Zun Yan</h1></Link>
