@@ -9,7 +9,7 @@ import {
 import useEmblaCarousel from 'embla-carousel-react'
 import Image, { StaticImageData } from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
-
+import style from "./carouselPhoto.module.css"
 
 const TWEEN_FACTOR_BASE = 0.2
 
@@ -90,15 +90,15 @@ const CarouselPhoto: React.FC<PropType> = (props) => {
   }, [emblaApi, tweenParallax])
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <div className={style.embla}>
+      <div className={style.embla__viewport} ref={emblaRef}>
+        <div className={style.embla__container}>
           {slides.map((slide) => (
-            <div className="embla__slide" key={slide.id}>
-              <div className="embla__parallax">
+            <div className={style.embla__slide} key={slide.id}>
+              <div className={style.embla__parallax}>
                 <div className="embla__parallax__layer">
                   <Image
-                    className="embla__slide__img embla__parallax__img"
+                    className={`${style.embla__slide__img} ${style.embla__parallax__img}`}
                     src={slide.sourse}
                     alt={slide.altText}
                     width={1280}

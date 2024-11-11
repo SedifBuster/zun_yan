@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export
@@ -5,38 +6,42 @@ export
 
 ) {
 
-  //иконки для соц сетей
-  //под мобилы
-  return <footer className="flex justify-center gap-6 ml-2 mr-2 mb-10 pt-2">
+  return <footer className="flex justify-center gap-6 ml-2 mr-2 mb-10 pt-2 max-md:flex-col max-md:items-center max-md:text-center">
     <div className="flex flex-col">
       <p className="font-semibold">© zun yan 2024 г.</p>
       <p>Все права защищены</p>
-      <p>Политика конфиденциальности</p>
-      <p>Публичная оферта</p>
+      <Link href={`/docs/policy.pdf`} target="_blank">
+        <p className="underline">Политика конфиденциальности</p>
+      </Link>
     </div>
 
     <div className="flex flex-col">
-      <p className="font-semibold">Каталог блюд</p>
+      <Link href={`https://2gis.ru/vladivostok/firm/70000001084274180/tab/prices?m=131.875981%2C43.11194%2F16`} target="_blank">
+        <p className="underline font-semibold">Каталог блюд</p>
+      </Link>
     </div>
 
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       <p className="font-semibold">Разделы сайта</p>
-      <p>меню</p>
-      <p>о нас</p>
-      <p>контакты</p>
+        <Link href={"#about_usAnchor"}><p className="underline">о нас</p></Link>
+        <Link href={"#menuAnchor"}><p className="underline">меню</p></Link>
+        <Link href={"#contactsAnchor"}><p className="underline">контакты</p></Link>
     </div>
 
     <div className="flex flex-col">
       <p className="font-semibold">Юр. информация</p>
-      <p className="w-80">ООО КН,Юр. адрес: г. Москва,ул. Профсоюзная, д.126,корп. 3, пом. III, комн. 6</p>
-      <p>ОГРН: 1237700737185</p>
-      <p>ИНН: 9728110654</p>
+      <p className="">
+        ООО "ПЯТНИЦА", Юр. адрес: г. Владивосток, проспект Океанский, д. 110а
+      </p>
+      <p>ОГРН: 1242500019662</p>
+      <p>ИНН: 2536346043</p>
     </div>
 
     <div className="flex flex-col">
       <p className="font-semibold">Контакты</p>
-      <p>8 (499) 490-47-21</p>
-      <p>info@chinanews.moscow</p>
+      <Link href={`tel:+79341004777`}>
+        <p className="underline">+7 (934) 100-47-77</p>
+      </Link>
     </div>
     </footer>
   }
