@@ -25,7 +25,7 @@ const EmblaCarouselHits: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla w-[90vw] max-w-[90vw]">
+    <section className="embla w-[89vw] max-w-[90vw]">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slideHit) => (

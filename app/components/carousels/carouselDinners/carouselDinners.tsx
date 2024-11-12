@@ -12,7 +12,7 @@ type PropType = {
 
 const CarouselDinners: React.FC<PropType> = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [emblaRef] = useEmblaCarousel(options)
 
 
 

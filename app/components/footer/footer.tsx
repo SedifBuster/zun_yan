@@ -30,8 +30,8 @@ export
 
     <div className="flex flex-col">
       <p className="font-semibold">Юр. информация</p>
-      <p className="">
-        ООО "ПЯТНИЦА", Юр. адрес: г. Владивосток, проспект Океанский, д. 110а
+      <p className="md:max-w-56">
+        ООО &quot ПЯТНИЦА &quot, Юр. адрес: г. Владивосток, проспект Океанский, д. 110а
       </p>
       <p>ОГРН: 1242500019662</p>
       <p>ИНН: 2536346043</p>
@@ -41,6 +41,9 @@ export
       <p className="font-semibold">Контакты</p>
       <Link href={`tel:+79341004777`}>
         <p className="underline">+7 (934) 100-47-77</p>
+      </Link>
+      <Link href={`mailto:Dizel24042001@mail.ru`}>
+        <p className="underline">Dizel24042001@mail.ru</p>
       </Link>
     </div>
     </footer>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CarouselPhoto from "./components/carousels/carouselPhoto/carouselPhoto";
 import { EmblaOptionsType } from 'embla-carousel'
-import { Header } from "./components/header/header";
 import logoPic1 from "../public/logo1.webp"
 import CarouselHits from "./components/carousels/carouselHits/carouselHits";
 
@@ -17,7 +16,6 @@ import slide8 from "../public/carouselPh/8.webp"
 import slide9 from "../public/carouselPh/9.webp"
 import slide10 from "../public/carouselPh/10.webp"
 import slide11 from "../public/carouselPh/11.webp"
-import CarouselDinners from "./components/carousels/carouselDinners/carouselDinners";
 
 const slidesPhoto = [
   {
@@ -161,13 +159,14 @@ export
  // const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 3, dragFree: true, loop: true }
-const SLIDE_COUNT = 10
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+//const SLIDE_COUNT = 10
+//const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
     <div className=" font-[family-name:var(--font-geist-sans)] ">
+       
       <section className="bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover">
-        <Header />
+      
         <div className="container mx-auto">
           <div  className="flex flex-col gap-8 row-start-2 items-center pt-36 sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
             <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
@@ -214,7 +213,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
     с 12:00 до 15:00
 
     за 350 рублей</h3>
-     <CarouselDinners slides={SLIDES}/>
+     {/*<CarouselDinners slides={SLIDES}/>*/}
       </div>
       </section>
 
