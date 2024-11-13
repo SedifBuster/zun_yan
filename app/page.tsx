@@ -1,6 +1,7 @@
 import CarouselPhoto from "./components/carousels/carouselPhoto/carouselPhoto";
 import { EmblaOptionsType } from 'embla-carousel'
 import CarouselHits from "./components/carousels/carouselHits/carouselHits";
+import Image from "next/image";
 
 //slidersPhoto
 import slide1 from "../public/carouselPh/slide1.jpg"
@@ -145,6 +146,8 @@ const slidesHits = [
 
 ]
 
+import teamImage from "../public/team.jpg"
+
 
 export
   default function Home(
@@ -228,22 +231,22 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
         </div>
       </section>
      */}
-     <section className="pt-6 pb-6 bg-[#413026] h-[85vh] text-white " id="about_usAnchor">
-        <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto">
-        <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
-          Команда
-      </h3>
-
+     <section className="pt-6 pb-6 bg-[#413026] h-[65vh] text-white " id="about_usAnchor">
+        <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto justify-center">
+          <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
+            Команда
+          </h3>
+          <Image src={teamImage} height={400} alt="команда ресторана Зун Ян" className="mx-auto"/>
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-yellow-500" id="contactsAnchor">
-      <p className="text-black">секция с отзывами с яндекса(не точно)</p>
-      <p className="text-black">секция с адресом и картой</p>
-      <h3 className="text-[#413026] w-full text-center text-5xl pt-8 font-semibold">
+      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-black text-white" id="contactsAnchor">
+      <p >секция с отзывами с яндекса(не точно)</p>
+      <p >секция с адресом и картой</p>
+      <h3 className=" w-full text-center text-5xl pt-8 font-semibold">
         Контакты
       </h3>
-      <p className="text-black">секция с адресом и картой</p>
+      <p className="">секция с адресом и картой</p>
       <Link href={`tel:+79341004777`}><p className="text-xl">+7 (934) 100-47-77</p></Link>
       </section>
     </div>
