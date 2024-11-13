@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CarouselPhoto from "./components/carousels/carouselPhoto/carouselPhoto";
 import { EmblaOptionsType } from 'embla-carousel'
-import logoPic1 from "../public/logo1.webp"
 import CarouselHits from "./components/carousels/carouselHits/carouselHits";
 
 //slidersPhoto
@@ -156,7 +155,7 @@ export
 ) {
 
   /**
-   * Первый и главный раздел
+ Первый и главный раздел
 Новогодние корпоративы в Зун Ян, смахиваешь диджеи и живая музыка,
  смахиваешь комплексные обеды за 350 рублей с 12:00 до 15:00 и последняя пикча просто зун ян
 Раздел о нас сделать как небольшую галерею с интерьером
@@ -191,7 +190,7 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 3, dragFree: true, loop:
 
       <section className="  bg-[#413026]" id="about_usAnchor">
         <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto">
-          <Image src={logoPic1} alt='фото ресторана' className="mx-auto"/>
+          <CarouselPhoto slides={slidesPhoto} options={OPTIONS}/>
           <h3 className="text-white text-5xl font-bold w-full text-center">О НАС</h3>
           <p className="text-white pb-12 text-lg text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
             Ресторан в самом сердце Владивостока подарит вам незабываемые вечера и в целом текст о том, как здесь хорошо.
