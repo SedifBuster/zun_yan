@@ -1,6 +1,7 @@
 import CarouselPhoto from "./components/carousels/carouselPhoto/carouselPhoto";
 import { EmblaOptionsType } from 'embla-carousel'
 import CarouselHits from "./components/carousels/carouselHits/carouselHits";
+import CarouselMain from "./components/carousels/carouselMain/carouselMain";
 import Image from "next/image";
 
 //slidersPhoto
@@ -183,6 +184,7 @@ export
      </section>
 
    */
+     const SLIDES = Array.from(Array(5).keys())
   const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 10 }
  // const SLIDE_COUNT = 5
  // const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
@@ -197,6 +199,7 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
       <section className="bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover">
       
         <div className="container mx-auto">
+        <CarouselMain  slides={SLIDES}/>
           <div  className="flex flex-col gap-8 row-start-2 items-center pt-36 sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
             <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
             <h2 className="text-white w-full text-5xl text-center max-md:text-3xl max-lg:text-2xl">РЕСТОРАН КИТАЙСКОЙ КУХНИ</h2>
@@ -217,7 +220,7 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
       </section>
 
 
-      <section className="pb-6 pt-12 bg-black text-white" id="menuAnchor">
+      <section className="pb-6 pt-12 bg-[#505050] text-white" id="menuAnchor">
       <div className="flex flex-col gap-8 items-center container mx-auto">
        <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
            ХИТЫ В НАШЕМ ЗАВЕДЕНИИ
@@ -225,12 +228,7 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
        <CarouselHits slides={slidesHits} options={OPTIONSHITS}/>
       </div>
       </section>
-    {/**
-     *       <section className="pt-6 pb-6 bg-[#413026] max-md:hidden max-lg:hidden" id="about_usAnchor">
-        <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto">
-        </div>
-      </section>
-     */}
+
      <section className="pt-6 pb-6 bg-[#413026] h-[65vh] text-white " id="about_usAnchor">
         <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto justify-center">
           <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
@@ -240,7 +238,7 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-black text-white" id="contactsAnchor">
+      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-[#505050] text-white" id="contactsAnchor">
       <p >секция с отзывами с яндекса(не точно)</p>
       <p >секция с адресом и картой</p>
       <h3 className=" w-full text-center text-5xl pt-8 font-semibold">
@@ -268,3 +266,10 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
             </div> 
              slides: { id: number; sourse: StaticImageData; altText: string; text: string; price: number; }[]
  */
+
+             /**
+     *       <section className="pt-6 pb-6 bg-[#413026] max-md:hidden max-lg:hidden" id="about_usAnchor">
+        <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto">
+        </div>
+      </section>
+     */
