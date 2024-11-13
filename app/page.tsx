@@ -147,6 +147,24 @@ const slidesHits = [
 
 ]
 
+//slidersMain
+const sliderMain = [
+  {
+    id: 1,
+    source: '/carouselMain/newYeargor.mp4',
+    sourceMobile: '/carouselMain/newYearVert.mp4',
+    altText: "Отметь новый год в атмосфере китайской сказки вместе с Zun Yan",
+    text: "Отметь новый год в атмосфере китайской сказки вместе с Zun Yan"
+  },
+  {
+    id: 2,
+    source: '/carouselMain/liveMusicGor.mp4',
+    sourceMobile: '/carouselMain/liveMusicVert.mp4',
+    altText: "Диджеи и живая музыка",
+    text: "Диджеи и живая музыка"
+  },
+]
+
 import teamImage from "../public/team.jpg"
 
 
@@ -183,27 +201,18 @@ export
      </div>
      </section>
 
-   */
-     const SLIDES = Array.from(Array(5).keys())
-  const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 10 }
- // const SLIDE_COUNT = 5
- // const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+ */
+  const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 10 } 
+  const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop: true }
 
-const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop: true }
-//const SLIDE_COUNT = 10
-//const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
     <div className=" font-[family-name:var(--font-geist-sans)] ">
        
-      <section className="bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover">
+      <section className=" bg-center bg-no-repeat bg-cover">
       
-        <div className="container mx-auto">
-        <CarouselMain  slides={SLIDES}/>
-          <div  className="flex flex-col gap-8 row-start-2 items-center pt-36 sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
-            <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
-            <h2 className="text-white w-full text-5xl text-center max-md:text-3xl max-lg:text-2xl">РЕСТОРАН КИТАЙСКОЙ КУХНИ</h2>
-          </div>
+        <div className=" bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover">
+        <CarouselMain  slides={sliderMain}/>
         </div>
       </section>
 
@@ -220,8 +229,8 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
       </section>
 
 
-      <section className="pb-6 pt-12 bg-[#505050] text-white" id="menuAnchor">
-      <div className="flex flex-col gap-8 items-center container mx-auto">
+      <section className="pb-6 pt-12 bg-[#2c2c2d] text-white" id="menuAnchor">
+      <div className="flex flex-col gap-8 items-center">
        <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
            ХИТЫ В НАШЕМ ЗАВЕДЕНИИ
       </h3>
@@ -238,18 +247,62 @@ const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop:
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-[#505050] text-white" id="contactsAnchor">
-      <p >секция с отзывами с яндекса(не точно)</p>
-      <p >секция с адресом и картой</p>
-      <h3 className=" w-full text-center text-5xl pt-8 font-semibold">
+      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-[#2c2c2d] text-white" id="contactsAnchor">
+
+      <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
+      <div className="text-9xl w-[60%] max-md:w-[100%]">
+        я карта
+      </div>
+      <div className="flex gap-2 flex-col">
+      <h3 className="w-full text-start text-5xl pt-8 font-semibold max-md:text-center">
         Контакты
       </h3>
-      <p className="">секция с адресом и картой</p>
-      <Link href={`tel:+79341004777`}><p className="text-xl">+7 (934) 100-47-77</p></Link>
+      <p className="flex gap-2 text-lg max-md:justify-center">
+      <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9.00008 0.585007C4.58908 0.585007 1.00008 4.17401 1.00008 8.58001C0.971081 15.025 8.69608 20.369 9.00008 20.585C9.00008 20.585 17.0291 15.025 17.0001 8.58501C17.0001 4.17401 13.4111 0.585007 9.00008 0.585007ZM9.00008 12.585C6.79008 12.585 5.00008 10.795 5.00008 8.58501C5.00008 6.37501 6.79008 4.58501 9.00008 4.58501C11.2101 4.58501 13.0001 6.37501 13.0001 8.58501C13.0001 10.795 11.2101 12.585 9.00008 12.585Z" fill="#D21F29"></path>
+      </svg>
+        Адрес ресторана: 
+      </p>
+      <p className="pl-6">г. Владивосток, Улица Арсеньева, 9/13</p>
+      <p className="flex gap-2 text-lg items-center max-md:justify-center">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clipPath="url(#clip0_383_41259)">
+                                <path d="M15.1212 14.7635L13.3701 11.73C13.0208 11.1278 12.2279 10.9308 11.6026 11.2919L10.0746 12.1739C10.0097 12.1116 9.94263 12.0466 9.87223 11.9779C9.22417 11.3523 8.3374 10.4952 7.5352 9.10458C6.73038 7.71079 6.4314 6.51253 6.21247 5.63764C6.18946 5.545 6.16753 5.45576 6.1451 5.37057L7.17036 4.77965L7.67471 4.48805C8.3009 4.12641 8.52588 3.34123 8.17804 2.73791L6.427 -0.295763C6.07899 -0.898409 5.28572 -1.09551 4.65953 -0.733869L3.80365 -0.236454L3.81717 -0.213227C3.51382 0.0146555 3.23576 0.296729 2.99905 0.61783C2.77796 0.924609 2.60996 1.22887 2.48557 1.54554C1.46804 4.07953 2.02341 6.7934 4.40075 10.9111C7.68706 16.6027 11.3955 17.233 11.556 17.2582C11.9068 17.3087 12.2543 17.3147 12.6198 17.2749C13.0127 17.2312 13.3957 17.1317 13.7444 16.9833L13.7556 17.0004L14.6179 16.5146C15.243 16.1528 15.4686 15.3675 15.1212 14.7635Z" fill="#D21F29"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_383_41259">
+                                    <rect width="17.8533" height="17.83" fill="white" transform="translate(0 0.0850067)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+        Для связи: 
+      </p>
+      <Link href={`tel:+79341004777`}><p className="pl-6">+7 (934) 100-47-77</p></Link>
+      <Link href={`mailto:Dizel24042001@mail.ru`}>
+        <p className="pl-6">Dizel24042001@mail.ru</p>
+      </Link>
+
+
+      <p  className="flex gap-2 text-lg items-center max-md:justify-center">
+      <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11 22.085C4.925 22.085 0 17.16 0 11.085C0 5.00999 4.925 0.0849915 11 0.0849915C17.075 0.0849915 22 5.00999 22 11.085C22 17.16 17.075 22.085 11 22.085ZM12 4.58499H10V11.499L14 15.499L15.414 14.085L12 10.671V4.58499Z" fill="#D21F29"></path>
+       </svg>
+
+        Время работы:   
+      </p>
+      
+      <p className="pl-6">Вс - Пн:  10:00 - 22:00</p>
+      <p className="pl-6">Пт - Сб:  10:00 - 24:00</p>
+
+      </div>
+      </div>
+      
       </section>
     </div>
   );
 }
+
+
 
 /**
  *     <div>

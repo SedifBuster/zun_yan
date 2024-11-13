@@ -11,9 +11,9 @@ export
       flex
       justify-center
       gap-6
-      ml-2
-      mr-2
-      mb-10
+      pl-2
+      pr-2
+      pb-10
       pt-2
       max-md:flex-col
       max-md:items-center

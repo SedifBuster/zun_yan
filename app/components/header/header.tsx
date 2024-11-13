@@ -15,7 +15,7 @@ const number = '+79341004777'
 export
   function Header() {
     return <header id="homeAnchor" className="sticky top-0 z-50 h-0 w-full">
-      <div  className="h-[10vh] flex justify-between items-end  container mx-auto text-white">
+      <div  className="h-[10vh] flex justify-between items-center  container mx-auto text-white">
       <div className="flex gap-6">
       <nav className="flex items-end">
         <Link href={"#homeAnchor"} className="flex items-center">
@@ -23,7 +23,7 @@ export
         <h3 className="text-3xl w-[50%]">ZUN YAN</h3></Link>
       </nav>
       </div>
-      <nav className="flex gap-6 items-center max-md:hidden">
+      <nav className="flex gap-6 items-start max-md:hidden">
         <Link href={"#homeAnchor"}><p className="text-xl">главная</p></Link>
         <Link href={"#about_usAnchor"}><p className="text-xl">о нас</p></Link>
         <Link href={"#menuAnchor"}><p className="text-xl">меню</p></Link>
