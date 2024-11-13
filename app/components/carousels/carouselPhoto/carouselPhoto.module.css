@@ -119,3 +119,9 @@
     object-fit: cover;
   }
   
+
+  @media (max-width: 768px) {
+    .embla__slide__img {
+        height: 100%;
+    }
+}

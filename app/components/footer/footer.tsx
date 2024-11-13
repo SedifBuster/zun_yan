@@ -6,7 +6,22 @@ export
 
 ) {
 
-  return <footer className="flex justify-center gap-6 ml-2 mr-2 mb-10 pt-2 max-md:flex-col max-md:items-center max-md:text-center">
+  return <footer
+    className="
+      flex
+      justify-center
+      gap-6
+      ml-2
+      mr-2
+      mb-10
+      pt-2
+      max-md:flex-col
+      max-md:items-center
+      max-md:text-center
+      bg-white
+      text-black
+    "
+  >
     <div className="flex flex-col">
       <p className="font-semibold">© zun yan 2024 г.</p>
       <p>Все права защищены</p>
@@ -21,7 +36,7 @@ export
       </Link>
     </div>
 
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
       <p className="font-semibold">Разделы сайта</p>
         <Link href={"#about_usAnchor"}><p className="underline">о нас</p></Link>
         <Link href={"#menuAnchor"}><p className="underline">меню</p></Link>
@@ -31,7 +46,7 @@ export
     <div className="flex flex-col">
       <p className="font-semibold">Юр. информация</p>
       <p className="md:max-w-56">
-        ООО &quot ПЯТНИЦА &quot, Юр. адрес: г. Владивосток, проспект Океанский, д. 110а
+        ООО  ПЯТНИЦА , Юр. адрес: г. Владивосток, проспект Океанский, д. 110а
       </p>
       <p>ОГРН: 1242500019662</p>
       <p>ИНН: 2536346043</p>
