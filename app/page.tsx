@@ -77,32 +77,33 @@ const slidesPhoto = [
 
 //slidersHits
 import sliderHit1 from "../public/carouselHits/hit1.jpg"
-import sliderHit3 from "../public/carouselHits/hit3.webp"
+import sliderHit2 from "../public/carouselHits/hit2.jpg"
+import sliderHit3 from "../public/carouselHits/hit3.jpg"
 import Link from "next/link";
 
 const slidesHits = [
   {
     id: 1,
     sourse: sliderHit1,
-    altText: "Гуобаджоу",
-    text: "Гуобаджоу",
-    price: 100
+    altText: " Морепродукты на чугуне ",
+    text: " Морепродукты на чугуне ",
+    price: 1200
   },
   {
     id: 2,
-    sourse: sliderHit3,
-    altText: "Краб из аквариума",
-    text: "Краб из аквариума",
-    price: 200
+    sourse: sliderHit2,
+    altText: "Го Боа Жоу из свинины",
+    text: "Го Боа Жоу из свинины",
+    price: 680
   },
   {
     id: 3,
     sourse: sliderHit3,
-    altText: "Салат",
-    text: "Салат",
-    price: 300
+    altText: "Шашлык свиной на шпажке",
+    text: "Шашлык свиной на шпажке",
+    price: 680
   },
-  {
+  /*{
     id: 4,
     sourse: sliderHit1,
     altText: "Гуобаджоу",
@@ -143,8 +144,7 @@ const slidesHits = [
     altText: "Салат",
     text: "Салат",
     price: 300
-  },
-
+  },*/
 ]
 
 //slidersMain
@@ -240,7 +240,7 @@ export
 
      <section className="pt-6 pb-6 bg-[#413026] h-[65vh] text-white " id="about_usAnchor">
         <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto justify-center">
-          <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
+          <h3 className=" w-full text-center text-5xl pt-8 pb-12 font-semibold max-md:pt-2 ">
             Команда
           </h3>
           <Image src={teamImage} height={400} alt="команда ресторана Зун Ян" className="mx-auto"/>
@@ -250,9 +250,57 @@ export
       <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-[#2c2c2d] text-white" id="contactsAnchor">
 
       <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
+
+
+
+
       <div className="text-9xl w-[60%] max-md:w-[100%]">
         я карта
+        {/**
+         * 
+         * <a 
+          className="dg-widget-link"
+          href="http://2gis.ru/vladivostok/firm/70000001084274180/center/131.87597751617434,43.11251294606876/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+        >
+          Посмотреть на карте Владивостока
+        </a>
+        <div className="dg-widget-link">
+          <a
+            href="http://2gis.ru/vladivostok/firm/70000001084274180/photos/70000001084274180/center/131.87597751617434,43.11251294606876/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos"
+          >
+            Фотографии компании
+          </a>
+        </div>
+        <div className="dg-widget-link">
+          <a
+            href="http://2gis.ru/vladivostok/center/131.875981,43.11194/zoom/16/routeTab/rsType/bus/to/131.875981,43.11194╎Zun Yan, китайский ресторан?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
+          >
+            Найти проезд до Zun Yan, китайский ресторан
+          </a>
+        </div>
+        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js">
+        </script>
+        <script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":43.11251294606876,"lon":131.87597751617434,"zoom":16},"opt":{"city":"vladivostok"},"org":[{"id":"70000001084274180"}]});</script>
+        <noscript style="color:#c00;font-size:16px;font-weight:bold;">
+          Виджет карты использует JavaScript. Включите его в настройках вашего браузера.
+        </noscript>
+         * 
+         */}
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="flex gap-2 flex-col">
       <h3 className="w-full text-start text-5xl pt-8 font-semibold max-md:text-center">
         Контакты

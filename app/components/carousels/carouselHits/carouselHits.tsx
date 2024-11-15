@@ -31,7 +31,7 @@ const EmblaCarouselHits: React.FC<PropType> = (props) => {
           {slides.map((slideHit) => (
             <div className="embla__slide" key={slideHit.id}>
               <div className="embla_slide flex items-center" key={slideHit.id}>
-                <div className='h-[300px] flex '>
+                <div className='h-full flex '>
                   <Image src={slideHit.sourse} alt={slideHit.altText} />
                 </div>
               <div
@@ -47,7 +47,8 @@ const EmblaCarouselHits: React.FC<PropType> = (props) => {
                   items-center
                   justify-center
                   max-md:font-normal
-                  max-md:ml-[-10vh]
+                  max-md:ml-[-8vh]
+                  max-md:w-44
                 '
               ><p className='p-4 '>{slideHit.price} руб</p></div>
             </div> 

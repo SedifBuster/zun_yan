@@ -3,8 +3,7 @@
 import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import style from "./carouselMain.module.css"
-import lunch1 from "../../../../public/carouselMain/lunch.webp"
-import lunch2 from "../../../../public/carouselMain/lunch2.jpg"
+import lunchMain from "../../../../public/carouselMain/lunchMain.jpg"
 import Image from 'next/image'
 
 
@@ -66,7 +65,7 @@ const CarouselMain: React.FC<PropType> = (props) => {
 
           <div  className="embla__slide ">
 
-            <div  className=" flex gap-4 max-lg:flex-col container mx-auto max-md:mt-12 mt-36 h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
+            <div  className=" flex gap-4 max-lg:flex-col container mx-auto max-md:mt-20 mt-36 h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
 
 
             <div className='w-[40%] flex flex-col max-md:w-full gap-4'>
@@ -74,8 +73,42 @@ const CarouselMain: React.FC<PropType> = (props) => {
               <h5 className="text-white w-full text-5xl max-md:text-3xl max-md:text-center max-lg:text-2xl">с 12:00 до 15:00</h5>
               <h5 className="text-white w-full text-5xl max-md:text-3xl max-md:text-center max-lg:text-2xl">за 350 рублей</h5>
             </div>
+            <div>
+            <Image  src={lunchMain} alt={'Комплексные обеды'}/>
+            </div>
+            
+
+            <div>
+
+              </div>
+            </div>
+          </div>
 
 
+
+
+
+
+
+
+
+          <div  className="embla__slide">
+            <div  className="flex flex-col gap-8 row-start-2 items-center justify-center sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
+            <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
+            <h2 className="text-white w-full text-5xl text-center max-md:text-3xl max-lg:text-2xl">РЕСТОРАН КИТАЙСКОЙ КУХНИ</h2>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default CarouselMain
+
+
+/**
+ * 
               <div className='text-white flex flex-wrap max-md:justify-center '>
 
 
@@ -243,30 +276,4 @@ const CarouselMain: React.FC<PropType> = (props) => {
 
   
             </div>
-            <div>
-
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-          <div  className="embla__slide">
-            <div  className="flex flex-col gap-8 row-start-2 items-center justify-center sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
-            <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
-            <h2 className="text-white w-full text-5xl text-center max-md:text-3xl max-lg:text-2xl">РЕСТОРАН КИТАЙСКОЙ КУХНИ</h2>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export default CarouselMain
+ */
