@@ -205,9 +205,9 @@ export
   const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 10 } 
   const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop: true }
 
-
+//font-[family-name:var(--font-geist-sans)]
   return (
-    <div className=" font-[family-name:var(--font-geist-sans)] ">
+    <div className="  font-baskerville">
        
       <section className=" bg-center bg-no-repeat bg-cover">
       
@@ -251,11 +251,17 @@ export
 
       <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
 
-
+        
 
 
       <div className="text-9xl w-[60%] max-md:w-[100%]">
-        я карта
+
+
+
+
+
+
+
         {/**
          * 
          * <a 

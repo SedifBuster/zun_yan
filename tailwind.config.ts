@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        baskerville: ['var(--font-baskerville)'],
+        roboto: ['var(--font-roboto-slab)'],
+      }
     },
   },
   plugins: [],

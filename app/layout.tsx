@@ -15,6 +15,16 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const baskerville = localFont({
+  src: "./fonts/baskerville-display-pt.otf",
+  variable: "--font-baskerville",
+  weight: "100 900",
+})
+const robotoSlab = localFont({
+  src: "./fonts/RobotoSlab-VariableFont_wght.ttf",
+  variable: "--font-roboto-slab",
+  weight: "100 900"
+})
 
 export const metadata: Metadata = {
   title: "Zun Yan",
@@ -34,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${baskerville.variable} ${robotoSlab.variable} antialiased`}
       >
         <main className="scroll-smooth">
         <Header />

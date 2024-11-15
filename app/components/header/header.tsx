@@ -14,7 +14,7 @@ const number = '+79341004777'
 
 export
   function Header() {
-    return <header id="homeAnchor" className="sticky top-0 z-50 h-0 w-full">
+    return <header id="homeAnchor" className="sticky top-0 z-50 h-0 w-full  font-roboto">
       <div  className="h-[10vh] flex justify-between items-center  container mx-auto text-white">
       <div className="flex gap-6">
       <nav className="flex items-end">
