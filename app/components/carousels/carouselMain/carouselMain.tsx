@@ -37,9 +37,14 @@ const CarouselMain: React.FC<PropType> = (props) => {
         <div className="absolute inset-0">
           <div className="sm:text-5xl  font-thin sm:my-56 my-32 mx-16 text-center text-white text-[250px] mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">
               {slide.text}
+
           </div>
+          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    -&gt;
+       </span>
         </div>
       </div>
+
       </div>
 
       <div className="relative sm:hidden">

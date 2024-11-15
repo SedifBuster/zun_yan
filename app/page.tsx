@@ -250,17 +250,14 @@ export
       <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-[#2c2c2d] text-white" id="contactsAnchor">
 
       <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
-
         
-
-
       <div className="text-9xl w-[60%] max-md:w-[100%]">
-
-
-
-
-
-
+      <iframe 
+        src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=123387217373"
+        width="900"
+        height="800"
+        frameBorder="0"
+        ></iframe>
 
         {/**
          * 
