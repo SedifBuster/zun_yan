@@ -15,6 +15,8 @@ const config: Config = {
       fontFamily: {
         baskerville: ['var(--font-baskerville)'],
         roboto: ['var(--font-roboto-slab)'],
+        evolventa: ['var(--font-evolventa)'],
+        evolventaBold: ['var(--font-evolventa-bold)'],
       }
     },
   },

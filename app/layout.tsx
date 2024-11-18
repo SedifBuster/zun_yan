@@ -26,6 +26,18 @@ const robotoSlab = localFont({
   weight: "100 900"
 })
 
+const evolventa = localFont({
+  src: "./fonts/Evolventa-Regular.ttf",
+  variable: "--font-evolventa",
+  weight: "100 900"
+})
+
+const evolventaBold = localFont({
+  src: "./fonts/Evolventa-Bold.ttf",
+  variable: "--font-evolventa-bold",
+  weight: "100 900"
+})
+
 export const metadata: Metadata = {
   title: "Zun Yan",
   description: "ресторан китайской кухни",
@@ -44,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${baskerville.variable} ${robotoSlab.variable} antialiased`}
+        className={`${geistSans.variable} ${evolventa.variable} ${evolventaBold.variable} ${geistMono.variable} ${baskerville.variable} ${robotoSlab.variable} antialiased`}
       >
         <main className="scroll-smooth">
         <Header />

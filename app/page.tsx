@@ -103,48 +103,6 @@ const slidesHits = [
     text: "Шашлык свиной на шпажке",
     price: 680
   },
-  /*{
-    id: 4,
-    sourse: sliderHit1,
-    altText: "Гуобаджоу",
-    text: "Гуобаджоу",
-    price: 100
-  },
-  {
-    id: 5,
-    sourse: sliderHit3,
-    altText: "Краб из аквариума",
-    text: "Краб из аквариума",
-    price: 200
-  },
-  {
-    id: 6,
-    sourse: sliderHit3,
-    altText: "Салат",
-    text: "Салат",
-    price: 300
-  },
-  {
-    id: 7,
-    sourse: sliderHit1,
-    altText: "Гуобаджоу",
-    text: "Гуобаджоу",
-    price: 100
-  },
-  {
-    id: 8,
-    sourse: sliderHit3,
-    altText: "Краб из аквариума",
-    text: "Краб из аквариума",
-    price: 200
-  },
-  {
-    id: 9,
-    sourse: sliderHit3,
-    altText: "Салат",
-    text: "Салат",
-    price: 300
-  },*/
 ]
 
 //slidersMain
@@ -154,64 +112,40 @@ const sliderMain = [
     source: '/carouselMain/newYeargor.mp4',
     sourceMobile: '/carouselMain/newYearVert.mp4',
     altText: "Отметь новый год в атмосфере китайской сказки вместе с Zun Yan",
-    text: "Отметь новый год в атмосфере китайской сказки вместе с Zun Yan"
+    text: "НОВОГОДНИЕ КОРПОРАТИВЫ",
+    text2: "В АТМОСФЕРЕ",
+    text3: "КИТАЙСКОЙ СКАЗКИ",
   },
   {
     id: 2,
     source: '/carouselMain/liveMusicGor.mp4',
     sourceMobile: '/carouselMain/liveMusicVert.mp4',
-    altText: "Диджеи и живая музыка",
-    text: "Диджеи и живая музыка"
+    altText: "Диджеи и живая музыка каждую пятницу и субботу",
+    text: "ДИДЖЕИ И ЖИВАЯ МУЗЫКА",
+    text2: "КАЖДУЮ ПЯТНИЦУ",
+    text3: "И СУББОТУ",
   },
 ]
 
 import teamImage from "../public/team.jpg"
 
+//СТРЕЛКА
+//КАРТА
+//ТЕКСТ?
 
 export
   default function Home(
-
 ) {
 
-  /**
- Первый и главный раздел
-Новогодние корпоративы в Зун Ян, смахиваешь диджеи и живая музыка,
- смахиваешь комплексные обеды за 350 рублей с 12:00 до 15:00 и последняя пикча просто зун ян
-Раздел о нас сделать как небольшую галерею с интерьером
-Главная с объявлениями
-О нас(галерея)
-Хиты заведения
-Команда
-Отзывы
-Карта с контактами
-
-
-
-      <section className="pb-12 pt-12" id="menuAnchor">
-      <div className="flex flex-col gap-8 items-center container mx-auto">
-
-     <h3 className="text-black w-full text-center text-5xl pt-8 font-semibold">Комплексные
-
-    обеды
-
-    с 12:00 до 15:00
-
-    за 350 рублей</h3>
-     {/*<CarouselDinners slides={SLIDES}/>}
-     </div>
-     </section>
-
- */
   const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true, duration: 10 } 
   const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop: true }
 
-//font-[family-name:var(--font-geist-sans)]
   return (
     <div className="  font-baskerville">
        
       <section className=" bg-center bg-no-repeat bg-cover">
       
-        <div className=" bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover">
+        <div className=" bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover font-evolventa">
         <CarouselMain  slides={sliderMain}/>
         </div>
       </section>
@@ -220,10 +154,14 @@ export
         <div className="flex flex-col gap-2 items-center sm:items-start container mx-auto pt-4">
           <CarouselPhoto slides={slidesPhoto} options={OPTIONS}/>
           <h3 className="text-white text-5xl font-bold w-full text-center">О НАС</h3>
-          <p className="text-white pb-12 text-lg text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
-            Ресторан в самом сердце Владивостока подарит вам незабываемые вечера и в целом текст о том, как здесь хорошо.
-            Ресторан в самом сердце Владивостока подарит вам незабываемые вечера и в целом текст о том, как здесь хорошо.
-            Ресторан в самомсердце Владивостока подарит вам незабываемые вечера и в целом текст о том, как здесь хорошо
+          <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+          Ресторан Zun Yan — это уголок настоящего Китая в самом сердце Владивостока,
+           неподалёку от многофункционального комплекса «Аквамарин».
+            С мая 2024 года мы дарим нашим гостям уникальную возможность насладиться атмосферой восточного гостеприимства.
+
+          Мы гордимся большими традиционными китайскими блюдами,
+           приготовленными поварами из Китая по лучшим рецептам национальной кухни.
+            Особая гордость ресторана — аквариум, из которого гости могут выбрать краба или другие морепродукты для своего стола.
           </p>
         </div>
       </section>
@@ -235,73 +173,47 @@ export
            ХИТЫ В НАШЕМ ЗАВЕДЕНИИ
       </h3>
        <CarouselHits slides={slidesHits} options={OPTIONSHITS}/>
+       <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+       Мы гордимся большими традиционными китайскими блюдами,
+        приготовленными поварами из Китая по лучшим рецептам национальной кухни.
+         Особая гордость ресторана — аквариум, из которого гости могут выбрать краба или другие морепродукты для своего стола.
+         </p>
       </div>
       </section>
 
-     <section className="pt-6 pb-6 bg-[#413026] h-[65vh] text-white " id="about_usAnchor">
+     <section className="pt-6 pb-6 bg-[#413026] h-full text-white " id="about_usAnchor">
         <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto justify-center">
-          <h3 className=" w-full text-center text-5xl pt-8 pb-12 font-semibold max-md:pt-2 ">
+          <h3 className=" w-full text-center text-5xl pt-8 pb-6 font-semibold max-md:pt-2 ">
             Команда
           </h3>
           <Image src={teamImage} height={400} alt="команда ресторана Зун Ян" className="mx-auto"/>
+          <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+          Просторные залы и уютные индивидуальные кабинки для уединения.
+            Возможность отметить корпоративы, свадьбы и другие важные события с ведущими, диджеями и живой музыкой.
+      Широкий выбор напитков: от ароматного чая и кофе до лимонадов и алкогольных коктейлей.
+        Разнообразное меню, включающее бизнес-ланчи для будней и изысканные блюда для особых случаев.
+
+      Zun Yan — это место для тех, кто ценит высокий уровень сервиса, аутентичность и изысканную кухню. 
+      Мы предлагаем не просто ужин, а настоящее гастрономическое путешествие в Китай.
+
+        Приходите и убедитесь сами!
+          </p>
         </div>
       </section>
 
       <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start h-[85vh] bg-[#2c2c2d] text-white" id="contactsAnchor">
 
       <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
-        
+
       <div className="text-9xl w-[60%] max-md:w-[100%]">
-      <iframe 
-        src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=123387217373"
-        width="900"
-        height="800"
-        frameBorder="0"
-        ></iframe>
-
-        {/**
-         * 
-         * <a 
-          className="dg-widget-link"
-          href="http://2gis.ru/vladivostok/firm/70000001084274180/center/131.87597751617434,43.11251294606876/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+        <iframe 
+          src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=123387217373"
+          width="900"
+          height="800"
+          frameBorder="0"
         >
-          Посмотреть на карте Владивостока
-        </a>
-        <div className="dg-widget-link">
-          <a
-            href="http://2gis.ru/vladivostok/firm/70000001084274180/photos/70000001084274180/center/131.87597751617434,43.11251294606876/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos"
-          >
-            Фотографии компании
-          </a>
-        </div>
-        <div className="dg-widget-link">
-          <a
-            href="http://2gis.ru/vladivostok/center/131.875981,43.11194/zoom/16/routeTab/rsType/bus/to/131.875981,43.11194╎Zun Yan, китайский ресторан?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
-          >
-            Найти проезд до Zun Yan, китайский ресторан
-          </a>
-        </div>
-        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js">
-        </script>
-        <script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":43.11251294606876,"lon":131.87597751617434,"zoom":16},"opt":{"city":"vladivostok"},"org":[{"id":"70000001084274180"}]});</script>
-        <noscript style="color:#c00;font-size:16px;font-weight:bold;">
-          Виджет карты использует JavaScript. Включите его в настройках вашего браузера.
-        </noscript>
-         * 
-         */}
+        </iframe>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <div className="flex gap-2 flex-col">
@@ -352,28 +264,3 @@ export
     </div>
   );
 }
-
-
-
-/**
- *     <div>
-        <div className="h-[5vh] w-full bg-yellow-300"></div>
-        <div className="h-[5vh] w-full bg-[#00a86b]"></div>
-        <div className="h-[5vh] w-full bg-[#f70505]"></div>
-      </div>
-
-
-                  <div className="embla_slide" key={slide.id}>
-                <Image src={slide.sourse} alt={slide.altText} width={150}/>
-              <div >{slide.price}</div>
-              <div >{slide.text}</div>
-            </div> 
-             slides: { id: number; sourse: StaticImageData; altText: string; text: string; price: number; }[]
- */
-
-             /**
-     *       <section className="pt-6 pb-6 bg-[#413026] max-md:hidden max-lg:hidden" id="about_usAnchor">
-        <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto">
-        </div>
-      </section>
-     */
