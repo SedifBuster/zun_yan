@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@2gis/mapgl@^1.53.0":
+  version "1.53.0"
+  resolved "https://registry.yarnpkg.com/@2gis/mapgl/-/mapgl-1.53.0.tgz#3901b51e618b95f0059c86b1a4aaa2a9538e0e77"
+  integrity sha512-lT+XX1grV/Qg7rVtBfAPkXl+0c5JIzBr9j/+LcEURLKacfPOwAhlEh2lEY+O+YFA2IPi91FXYHs031IF3d/omA==
+  dependencies:
+    "@types/geojson" "^7946.0.7"
+
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
@@ -326,6 +333,11 @@
   integrity sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==
   dependencies:
     tslib "^2.4.0"
+
+"@types/geojson@^7946.0.7":
+  version "7946.0.14"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.14.tgz#319b63ad6df705ee2a65a73ef042c8271e696613"
+  integrity sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
