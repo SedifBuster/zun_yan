@@ -16,7 +16,7 @@ export
   default function Map() {
 
     useEffect(() => {
-        let map: any;
+        let map: any
         load().then((mapglAPI) => {
             map = new mapglAPI.Map('map-container', {
                 center: [43.11251294606876, 131.87597751617434],
