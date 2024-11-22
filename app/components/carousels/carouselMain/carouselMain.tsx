@@ -4,9 +4,7 @@ import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import style from "./carouselMain.module.css"
 
-
 import useEmblaCarousel from 'embla-carousel-react'
-
 
 type PropType = {
   slides: { id: number; source: string; sourceMobile: string; altText: string; text: string; text2: string; text3: string;}[],
@@ -119,7 +117,7 @@ const CarouselMain: React.FC<PropType> = (props) => {
       </div>
   ))}
 
-<div  className="embla__slide bg-[url('/carouselMain/crab.jpg')]  bg-no-repeat bg-center bg-cover ">
+<div  className="embla__slide bg-[url('/carouselMain/crab.jpg')]  bg-no-repeat bg-center max-md:bg-[center_left_-20rem] bg-cover ">
     <div
       className="
        flex

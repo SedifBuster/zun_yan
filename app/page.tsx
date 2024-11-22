@@ -16,6 +16,8 @@ import slide8 from "../public/carouselPh/slide8.jpg"
 import slide9 from "../public/carouselPh/slide9.jpg"
 import slide10 from "../public/carouselPh/slide10.jpg"
 import slide11 from "../public/carouselPh/slide11.jpg"
+import slide12 from "../public/carouselPh/slide12.jpg"
+import slide13 from "../public/carouselPh/slide13.jpg"
 
 const slidesPhoto = [
   {
@@ -35,41 +37,51 @@ const slidesPhoto = [
   },
   {
     id: 4,
+    sourse: slide12,
+    altText: "бар"
+  },
+  {
+    id: 5,
+    sourse: slide13,
+    altText: "светомузыка"
+  },
+  {
+    id: 6,
     sourse: slide4,
     altText: "живая музыка и танцпол - все для идеального вечера"
   },
   {
-    id: 5,
+    id: 7,
     sourse: slide5,
     altText: "фотография внутри ресторана"
   },
   {
-    id: 6,
+    id: 8,
     sourse: slide6,
     altText: "повара приготовят настоящие шедевры китайской кухни"
   },
   {
-    id: 7,
+    id: 9,
     sourse: slide7,
     altText: "фотография террасы"
   },
   {
-    id: 8,
+    id: 10,
     sourse: slide8,
     altText: "аутентичное меню с большими порциями, свежие морепродукты и пельмешки"
   },
   {
-    id: 9,
+    id: 11,
     sourse: slide9,
     altText: "место для проведений банкетов и мероприятий"
   },
   {
-    id: 10,
+    id: 12,
     sourse: slide10,
     altText: "уютная терраса, открытая в любое время года"
   },
   {
-    id: 11,
+    id: 13,
     sourse: slide11,
     altText: "Аквариум с живыми крабами"
   },
@@ -79,6 +91,7 @@ const slidesPhoto = [
 import sliderHit1 from "../public/carouselHits/hit1.jpg"
 import sliderHit2 from "../public/carouselHits/hit2.jpg"
 import sliderHit3 from "../public/carouselHits/hit3.jpg"
+import sliderHit4 from "../public/carouselHits/hit4.jpg"
 import Link from "next/link";
 
 const slidesHits = [
@@ -102,6 +115,13 @@ const slidesHits = [
     altText: "Шашлык свиной на шпажке",
     text: "Шашлык свиной на шпажке",
     price: 680
+  },
+  {
+    id: 4,
+    sourse: sliderHit4,
+    altText: "Жареная Баранина с луком 400г",
+    text: "Жареная Баранина с луком",
+    price: 980
   },
 ]
 
@@ -127,7 +147,7 @@ const sliderMain = [
   },
 ]
 
-import teamImage from "../public/team.jpg"
+import teamImage from "../public/team.jpeg"
 
 //СТРЕЛКА
 //КАРТА
@@ -141,7 +161,7 @@ export
   const OPTIONSHITS: EmblaOptionsType = { slidesToScroll: 1, dragFree: true, loop: true }
 
   return (
-    <div className="  font-baskerville">
+    <div className="font-baskerville">
        
       <section className=" bg-center bg-no-repeat bg-cover">
       
@@ -186,7 +206,17 @@ export
           <h3 className=" w-full text-center text-5xl pt-8 pb-6 font-semibold max-md:pt-2 ">
             Команда
           </h3>
-          <Image src={teamImage} height={400} alt="команда ресторана Зун Ян" className="mx-auto"/>
+          <Image src={teamImage} height={600} alt="команда ресторана Зун Ян" className="mx-auto"/>
+
+          <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+          Наша команда — это не просто люди, работающие вместе.
+ Это семья, которая разделяет одну страсть — создавать неповторимую атмосферу китайской кухни для каждого гостя.
+  Мы тщательно отбираем ингредиенты, варим бульоны по древним рецептам и создаем блюда, наполненные теплом и заботой.
+   Наши повара, бармены и официанты — это мастера своего дела, которые с любовью и вниманием относятся к каждому моменту,
+    когда вы находитесь у нас. Мы стремимся, чтобы каждый визит в наш ресторан был не просто приемом пищи, а настоящим путешествием в Китай,
+     с которым вы не захотите расставаться.
+     </p>
+
           <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
           Просторные залы и уютные индивидуальные кабинки для уединения.
             Возможность отметить корпоративы, свадьбы и другие важные события с ведущими, диджеями и живой музыкой.
@@ -245,6 +275,12 @@ export
         <p className="pl-6">Dizel24042001@mail.ru</p>
       </Link>
 
+      <Link href={`mailto:Dizel24042001@mail.ru`}>
+        <p className="pl-6">
+тг https://t.me/zunyanvl
+вк https://vk.com/zunyan</p>
+      </Link>
+
 
       <p  className="flex gap-2 text-lg items-center max-md:justify-center">
       <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -264,3 +300,40 @@ export
     </div>
   );
 }
+
+/*
+ТЗ по сайту:
+
+ГОТОВО
+4. Поправить расположение краба в телефонной версии сайта.
+ Конкретнее сдвинуть его немного в сторону, как я высылал на дизайне.
+
+ГОТОВО
+5. ВАЖНО! Раздел "Команда" написать этот текст: Наша команда — это не просто люди, работающие вместе.
+ Это семья, которая разделяет одну страсть — создавать неповторимую атмосферу китайской кухни для каждого гостя.
+  Мы тщательно отбираем ингредиенты, варим бульоны по древним рецептам и создаем блюда, наполненные теплом и заботой.
+   Наши повара, бармены и официанты — это мастера своего дела, которые с любовью и вниманием относятся к каждому моменту,
+    когда вы находитесь у нас. Мы стремимся, чтобы каждый визит в наш ресторан был не просто приемом пищи, а настоящим путешествием в Китай,
+     с которым вы не захотите расставаться.
+
+ГОТОВО
+6. Добавить блюдо которое я высылал на белом фоне в меню "Жареная Баранина с луком 400г, 980 рублей" 
+
+ГОТОВО
+8. Заменить фото команды и краба.
+ Добавить в раздел о нас фото бара и интерьера со светомузыкой.
+
+
+ 
+1. Вшить 2ГИС. СРОЧНО МАСТ ХЭВ.
+
+2. В телефонной версии сайта в правый нижний угол добавить кнопку "Забронировать через звонок"
+ в цвет сайта или не в цвет, главное чтобы смотрелось гармонично.
+
+3. Добавить кликабельные соцсети на сайт. Желательно кликабельные контакты вообще выше карты сделать.
+ Именно про бронирование столов, не про ИНН и ОГРН.
+
+ 7. В разделе о нас слишком много текста? Его сократить? 
+Просто ты принял решение перенести текст в команду.
+ Также важно наличие абзацев, чтобы было проще читать текст.
+*/
