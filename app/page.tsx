@@ -178,7 +178,7 @@ export
         <div className="flex flex-col gap-2 items-center sm:items-start container mx-auto pt-4">
           <CarouselPhoto slides={slidesPhoto} options={OPTIONS}/>
           <h3 className="text-white text-5xl font-bold w-full text-center">О НАС</h3>
-          <p className="text-white pb-12 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+          <p className="text-white pb-6 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
           Ресторан Zun Yan — это уголок настоящего Китая в самом сердце Владивостока,
            неподалёку от многофункционального комплекса «Аквамарин».
             С мая 2024 года мы дарим нашим гостям уникальную возможность насладиться атмосферой восточного гостеприимства.
@@ -188,17 +188,28 @@ export
             Особая гордость ресторана — аквариум, из которого гости могут выбрать краба или другие морепродукты для своего стола.
           </p>
 
-          <p className="text-white pb-12 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+          <p className="text-white pb-6 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
           Просторные залы и уютные индивидуальные кабинки для уединения.
             Возможность отметить корпоративы, свадьбы и другие важные события с ведущими, диджеями и живой музыкой.
       Широкий выбор напитков: от ароматного чая и кофе до лимонадов и алкогольных коктейлей.
-        Разнообразное меню, включающее бизнес-ланчи для будней и изысканные блюда для особых случаев.
 
-      Zun Yan — это место для тех, кто ценит высокий уровень сервиса, аутентичность и изысканную кухню. 
-      Мы предлагаем не просто ужин, а настоящее гастрономическое путешествие в Китай.
+        
 
-        Приходите и убедитесь сами!
+        
           </p>
+
+          <p className="text-white pb-6 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+
+Разнообразное меню, включающее бизнес-ланчи для будней и изысканные блюда для особых случаев.
+
+Zun Yan — это место для тех, кто ценит высокий уровень сервиса, аутентичность и изысканную кухню. 
+Мы предлагаем не просто ужин, а настоящее гастрономическое путешествие в Китай.
+</p>
+
+<p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+
+Приходите и убедитесь сами!
+</p>
         </div>
       </section>
 
@@ -237,7 +248,7 @@ export
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start pb-12 md:pt-6 pl-2 max-md:pl-0 bg-[#2c2c2d] text-white" id="contactsAnchor">
+      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start pb-6 md:pt-6 pl-2 max-md:pl-0 bg-[#2c2c2d] text-white" id="contactsAnchor">
 
       <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
 
@@ -301,7 +312,7 @@ export
 
 
       <div className="flex gap-2 flex-col">
-      <h3 className="w-full text-start text-5xl pt-8 font-semibold max-md:text-center">
+      <h3 className="w-full text-start text-5xl pt-4 font-semibold max-md:text-center">
         Контакты
       </h3>
       <p className="flex gap-2 text-lg max-md:justify-center">
