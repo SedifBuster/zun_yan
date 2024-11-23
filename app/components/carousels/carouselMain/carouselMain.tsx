@@ -5,6 +5,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 import style from "./carouselMain.module.css"
 
 import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 type PropType = {
   slides: { id: number; source: string; sourceMobile: string; altText: string; text: string; text2: string; text3: string;}[],
@@ -13,7 +14,7 @@ type PropType = {
 
 const CarouselMain: React.FC<PropType> = (props) => {
   const { slides, options } = props
-  const [emblaRef] = useEmblaCarousel(options)
+  const [emblaRef] = useEmblaCarousel(options, [Autoplay({delay: 10000, jump: false})])
 
   return (
     <section className={style.embla}>
@@ -35,17 +36,13 @@ const CarouselMain: React.FC<PropType> = (props) => {
         className='
           container
           mx-auto
-
           flex
           flex-col
-
           gap-4
           select-none
           justify-center
-
           text-white
           text-7xl
-
           max-lg:text-7xl
           max-md:text-6xl
           max-md:w-full
@@ -53,22 +50,18 @@ const CarouselMain: React.FC<PropType> = (props) => {
           max-md:leading-16
         '
       >
-        <h4 className="font-evolventaBold [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text}</h4>
-        <h5 className="[text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text2}</h5>
-        <h5 className='max-md:text-5xl [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]'>{slide.text3}</h5>
+        <h3 className="font-evolventaBold [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text}</h3>
+        <h4 className="[text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text2}</h4>
+        <h4 className='max-md:text-5xl [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]'>{slide.text3}</h4>
             </div>
             {/**<span className="font-bold text-9xl text-white inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
        </span>
              * 
              */}
-            
-
         </div>
-
       </div>
-
-      </div>
+    </div>
 
       <div className="relative sm:hidden">
         <div className="bg-hero-section bg-no-repeat h-screen bg-center bg-cover">
@@ -76,6 +69,7 @@ const CarouselMain: React.FC<PropType> = (props) => {
             <source
               src={slide.sourceMobile}
               type="video/mp4"
+              about={slide.altText}
             />
           </video>
         <div className="absolute inset-0  backdrop-brightness-[80%] flex">
@@ -84,36 +78,31 @@ const CarouselMain: React.FC<PropType> = (props) => {
               {slide.text}
           </div>
            */}
-                 <div
-        className='
-          container
-          mx-auto
-
-          flex
-          flex-col
-
-          gap-4
-          select-none
-          justify-center
-
-          text-white
-          text-7xl
-
-          max-lg:text-7xl
-          max-md:text-5xl
-          max-md:w-full
-          max-md:text-center
-          max-md:leading-16
-        '
-      >
-        <h4 className="font-evolventaBold [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text}</h4>
-        <h5 className="max-md:text-4xl [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text2}</h5>
-        <h5 className='max-md:text-4xl max-md:pl-12 max-md:pr-12 [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]'>{slide.text3}</h5>
+        <div
+          className='
+            container
+            mx-auto
+            flex
+            flex-col
+            gap-4
+            select-none
+            justify-center
+            text-white
+            text-7xl
+            max-lg:text-7xl
+            max-md:text-5xl
+            max-md:w-full
+            max-md:text-center
+            max-md:leading-16
+          '
+        >
+        <h3 className="font-evolventaBold [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text}</h3>
+        <h4 className="max-md:text-4xl [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">{slide.text2}</h4>
+        <h4 className='max-md:text-4xl max-md:pl-12 max-md:pr-12 [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]'>{slide.text3}</h4>
       </div>
         </div>
       </div>
       </div>
-
       </div>
   ))}
 
@@ -131,17 +120,13 @@ const CarouselMain: React.FC<PropType> = (props) => {
         className='
           container
           mx-auto
-
           flex
           flex-col
-
           gap-4
           select-none
           justify-center
-
           text-white
           text-7xl
-
           max-lg:text-7xl
           max-md:text-6xl
           max-md:w-full
@@ -149,29 +134,26 @@ const CarouselMain: React.FC<PropType> = (props) => {
           max-md:leading-16
         '
       >
-        <h4 className="font-evolventaBold [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">ВЫБЕРИТЕ СВОЮ УСТРИЦУ</h4>
-        <h5 className="font-evolventaBold max-md:pl-12 max-md:pr-12 [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">ИЛИ КРАБА</h5>
-        <h5 className='max-md:text-4xl max-md:pl-2 max-md:pr-2 [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]'>ПРЯМО ИЗ АКВАРИУМА</h5>
+        <h3 className="font-evolventaBold [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">ВЫБЕРИТЕ СВОЮ УСТРИЦУ</h3>
+        <h4 className="font-evolventaBold max-md:pl-12 max-md:pr-12 [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]">ИЛИ КРАБА</h4>
+        <h4 className='max-md:text-4xl max-md:pl-2 max-md:pr-2 [text-shadow:_0_6px_6px_rgb(0_0_0_/_0.5)]'>ПРЯМО ИЗ АКВАРИУМА</h4>
       </div>
 
     </div>
   </div>
-
-
-          <div  className="embla__slide">
-            <div  className="flex select-none flex-col gap-8 row-start-2 items-center justify-center sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
-            <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
-            <h2 className="text-white w-full text-5xl text-center max-md:text-3xl max-lg:text-2xl">РЕСТОРАН КИТАЙСКОЙ КУХНИ</h2>
-          </div>
-          </div>
+      <div  className="embla__slide">
+        <div  className="flex select-none flex-col gap-8 row-start-2 items-center justify-center sm:items-start h-[90vh] max-md:h-[70vh]  max-lg:h-[70vh]" >
+         <h1 className="text-white text-[250px] w-full text-center mb-0 pb-0 max-md:text-8xl max-lg:text-7xl">ZUN YAN</h1>
+         <h2 className="text-white w-full text-5xl text-center max-md:text-3xl max-lg:text-2xl">РЕСТОРАН КИТАЙСКОЙ КУХНИ</h2>
         </div>
       </div>
-    </section>
+    </div>
+   </div>
+  </section>
   )
 }
 
 export default CarouselMain
-
 
 /**
  * <div  className="embla__slide bg-[url('/carouselMain/lunchMain.jpg')]  bg-no-repeat bg-center bg-cover ">

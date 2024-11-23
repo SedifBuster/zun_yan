@@ -20,7 +20,7 @@ type PropType = {
 
 const CarouselPhoto: React.FC<PropType> = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay: 10000, jump: false})])
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay: 5000, jump: false})])
   const tweenFactor = useRef(0)
   const tweenNodes = useRef<HTMLElement[]>([])
 

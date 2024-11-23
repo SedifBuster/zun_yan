@@ -16,7 +16,6 @@ const EmblaCarouselHits: React.FC<PropType> = (props) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
 
-
   const {
     prevBtnDisabled,
     nextBtnDisabled,
@@ -57,14 +56,11 @@ const EmblaCarouselHits: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-
       <div className="embla__controls">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
-
-
       </div>
     </section>
   )

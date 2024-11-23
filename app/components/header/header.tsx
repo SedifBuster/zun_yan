@@ -31,7 +31,7 @@ export
       <Link href={`tel:${number}`}><p className="text-xl">+7 (934) 100-47-77</p></Link>
       </nav>
       </div>
-      <div className="flex items-center md:hidden bg-gray-800/60 p-4  gap-1 text-white justify-end absolute right-1 top-[92vh] rounded-full">
+      <div className="flex items-center md:hidden bg-gray-800/60 p-4  gap-1 text-white justify-end absolute right-1 top-[89vh] rounded-full">
 
       <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
          <g clipPath="url(#clip0_383_41259)">

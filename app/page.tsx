@@ -170,88 +170,76 @@ export
       <section className=" bg-center bg-no-repeat bg-cover">
       
         <div className=" bg-[url('../public/back.jpg')] bg-center bg-no-repeat bg-cover font-evolventa">
-        <CarouselMain  slides={sliderMain}/>
+        <CarouselMain  slides={sliderMain} options={OPTIONS}/>
         </div>
       </section>
 
-      <section className="  bg-[#413026]" id="about_usAnchor">
+      <section className="bg-[#413026]" id="about_usAnchor">
         <div className="flex flex-col gap-2 items-center sm:items-start container mx-auto pt-4">
           <CarouselPhoto slides={slidesPhoto} options={OPTIONS}/>
-          <h3 className="text-white text-5xl font-bold w-full text-center">О НАС</h3>
+          <h4 className="text-white text-5xl font-bold w-full text-center">О НАС</h4>
           <p className="text-white pb-6 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
-          Ресторан Zun Yan — это уголок настоящего Китая в самом сердце Владивостока,
-           неподалёку от многофункционального комплекса «Аквамарин».
+            Ресторан Zun Yan — это уголок настоящего Китая в самом сердце Владивостока,
+            неподалёку от многофункционального комплекса «Аквамарин».
             С мая 2024 года мы дарим нашим гостям уникальную возможность насладиться атмосферой восточного гостеприимства.
-
-          Мы гордимся большими традиционными китайскими блюдами,
-           приготовленными поварами из Китая по лучшим рецептам национальной кухни.
+            Мы гордимся большими традиционными китайскими блюдами,
+            приготовленными поварами из Китая по лучшим рецептам национальной кухни.
             Особая гордость ресторана — аквариум, из которого гости могут выбрать краба или другие морепродукты для своего стола.
           </p>
 
           <p className="text-white pb-6 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
-          Просторные залы и уютные индивидуальные кабинки для уединения.
+            Просторные залы и уютные индивидуальные кабинки для уединения.
             Возможность отметить корпоративы, свадьбы и другие важные события с ведущими, диджеями и живой музыкой.
-      Широкий выбор напитков: от ароматного чая и кофе до лимонадов и алкогольных коктейлей.
-
-        
-
-        
+            Широкий выбор напитков: от ароматного чая и кофе до лимонадов и алкогольных коктейлей.
           </p>
 
           <p className="text-white pb-6 text-xl max-md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+            Разнообразное меню, включающее бизнес-ланчи для будней и изысканные блюда для особых случаев.
+            Zun Yan — это место для тех, кто ценит высокий уровень сервиса, аутентичность и изысканную кухню. 
+            Мы предлагаем не просто ужин, а настоящее гастрономическое путешествие в Китай.
+          </p>
 
-Разнообразное меню, включающее бизнес-ланчи для будней и изысканные блюда для особых случаев.
-
-Zun Yan — это место для тех, кто ценит высокий уровень сервиса, аутентичность и изысканную кухню. 
-Мы предлагаем не просто ужин, а настоящее гастрономическое путешествие в Китай.
-</p>
-
-<p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
-
-Приходите и убедитесь сами!
-</p>
+          <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+          Приходите и убедитесь сами!
+          </p>
         </div>
       </section>
 
 
       <section className="pb-6 pt-12 bg-[#2c2c2d] text-white" id="menuAnchor">
       <div className="flex flex-col gap-8 items-center">
-       <h3 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
+       <h4 className=" w-full text-center text-5xl pt-8 font-semibold max-md:pt-2 ">
            ХИТЫ В НАШЕМ ЗАВЕДЕНИИ
-      </h3>
+      </h4>
        <CarouselHits slides={slidesHits} options={OPTIONSHITS}/>
        <p className="text-white pb-12 text-xl md:text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
-       Мы гордимся большими традиционными китайскими блюдами,
-        приготовленными поварами из Китая по лучшим рецептам национальной кухни.
-         Особая гордость ресторана — аквариум, из которого гости могут выбрать краба или другие морепродукты для своего стола.
-         </p>
+          Мы гордимся большими традиционными китайскими блюдами,
+          приготовленными поварами из Китая по лучшим рецептам национальной кухни.
+          Особая гордость ресторана — аквариум, из которого гости могут выбрать краба или другие морепродукты для своего стола.
+       </p>
       </div>
       </section>
 
      <section className="pt-6 pb-6 bg-[#413026] h-full text-white " id="about_usAnchor">
         <div className="flex flex-col gap-4 items-center sm:items-start container mx-auto justify-center">
-          <h3 className=" w-full text-center text-5xl pt-8 pb-6 font-semibold max-md:pt-2 ">
+          <h4 className=" w-full text-center text-5xl pt-8 pb-6 font-semibold max-md:pt-2 ">
             Команда
-          </h3>
+          </h4>
           <Image src={teamImage} height={600} alt="команда ресторана Зун Ян" className="mx-auto"/>
 
-          <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
+        <p className="text-white pb-12 text-xl text-center w-full pl-36 pr-36 max-md:pl-10 max-md:pr-10">
           Наша команда — это не просто люди, работающие вместе.
- Это семья, которая разделяет одну страсть — создавать неповторимую атмосферу китайской кухни для каждого гостя.
-  Мы тщательно отбираем ингредиенты, варим бульоны по древним рецептам и создаем блюда, наполненные теплом и заботой.
-   Наши повара, бармены и официанты — это мастера своего дела, которые с любовью и вниманием относятся к каждому моменту,
-    когда вы находитесь у нас. Мы стремимся, чтобы каждый визит в наш ресторан был не просто приемом пищи, а настоящим путешествием в Китай,
-     с которым вы не захотите расставаться.
-     </p>
-
-
+          Это семья, которая разделяет одну страсть — создавать неповторимую атмосферу китайской кухни для каждого гостя.
+          Мы тщательно отбираем ингредиенты, варим бульоны по древним рецептам и создаем блюда, наполненные теплом и заботой.
+          Наши повара, бармены и официанты — это мастера своего дела, которые с любовью и вниманием относятся к каждому моменту,
+          когда вы находитесь у нас. Мы стремимся, чтобы каждый визит в наш ресторан был не просто приемом пищи, а настоящим путешествием в Китай,
+          с которым вы не захотите расставаться.
+        </p>
         </div>
       </section>
 
       <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start pb-6 md:pt-6 pl-2 max-md:pl-0 bg-[#2c2c2d] text-white" id="contactsAnchor">
-
       <div className="flex gap-6 container mx-auto max-md:flex-col max-md:text-center">
-
       {/**
        * <div className="text-9xl w-[60%] max-md:w-[100%]">
         <iframe 
@@ -264,9 +252,7 @@ Zun Yan — это место для тех, кто ценит высокий у
       </div>
        */}
        <div className="text-9xl w-[60%] max-md:w-[100%]">
-
         <Map />
-
       {
       /**
        *       <a
@@ -292,24 +278,7 @@ Zun Yan — это место для тех, кто ценит высокий у
       </noscript>
        */
        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
        </div>
-
 
       <div className="flex gap-2 flex-col">
       <h3 className="w-full text-start text-5xl pt-4 font-semibold max-md:text-center">
@@ -354,7 +323,6 @@ Zun Yan — это место для тех, кто ценит высокий у
         </p>
       </Link>
 
-      
       <p  className="flex gap-2 text-lg items-center max-md:justify-center">
       <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M11 22.085C4.925 22.085 0 17.16 0 11.085C0 5.00999 4.925 0.0849915 11 0.0849915C17.075 0.0849915 22 5.00999 22 11.085C22 17.16 17.075 22.085 11 22.085ZM12 4.58499H10V11.499L14 15.499L15.414 14.085L12 10.671V4.58499Z" fill="#D21F29"></path>
