@@ -23,18 +23,18 @@ export
                 key: 'bee4cc19-8954-4872-9924-e35d6a822673',
             });
             const marker = new mapglAPI.Marker(map, {
-                coordinates: [131.87594281942368, 43.11190441436611],
+                coordinates: [131.87598281942368, 43.11195441436611],
             });
         });
         return () => map && map.destroy();
     }, []);
 
-    return <div style={{ width: '100%', height: '100%' }}>
+    return <div className='w-[60vw] max-md:w-[100vw] h-[50vh]'>
         <MapWrapper />
     </div>
   }
 
-/**
+/**style={{ width: '100%', height: '100%' }}
  * <iframe id="map_704426398"
  *  frameborder="0" width="100%"
  *  height="600px" sandbox="allow-modals
