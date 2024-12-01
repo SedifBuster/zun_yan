@@ -24,8 +24,8 @@ const CarouselMain: React.FC<PropType> = (props) => {
             <div className="embla__slide" key={slide.id}>
 
        <div className="relative max-sm:hidden ">
-        <div className=" bg-no-repeat h-screen bg-center bg-cover ">
-          <video autoPlay loop muted className="absolute inset-0 object-cover h-screen xl:h-auto ">
+        <div className=" bg-no-repeat h-screen bg-center bg-cover">
+          <video autoPlay loop muted className="absolute inset-0 object-cover h-screen xl:h-auto lg:mx-auto">
             <source
               src={slide.source}
               type="video/mp4"
