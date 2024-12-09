@@ -53,20 +53,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-//image alt description
-
-
 //JSON-LD ?
-
-//robots gotovo
-//sitemap gotovo
-//metategs gotovo
-//og description gotovo
-//<meta name="robots" content="index,follow"> gotovo
-//keywords gotovo
-//title gotovo
-//descripton gotovo
-//code seo gotovo
 
 export default function RootLayout({
   children,
