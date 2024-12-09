@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
+import YandexMetrikaContainer from "./components/yandexMetrikaContainer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -70,6 +71,7 @@ export default function RootLayout({
         {children}
         <Footer />
         </main>
+        <YandexMetrikaContainer />
       </body>
     </html>
   );
