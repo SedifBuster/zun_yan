@@ -1,20 +1,22 @@
 "use client"
 
-import { load } from '@2gis/mapgl';
-import { Map } from '@2gis/mapgl/types';
+//import { load } from '@2gis/mapgl';
+//import { Map } from '@2gis/mapgl/types';
 import React from 'react';
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 
 const MapWrapper = React.memo(() => {
-        return <div id="map-container" style={{ width: '100%', height: '100%' }}></div>;
+        return <iframe src="https://yandex.ru/map-widget/v1/?z=18&ol=biz&oid=123387217373" width={"100%"} height={"100%"} frameBorder="0"></iframe>
     },
     () => true,
 );
 
+
+
 export
   default function Map2Gis() {
 
-    useEffect(() => {
+   /* useEffect(() => {
         let map: Map
         load().then((mapglAPI) => {
             map = new mapglAPI.Map('map-container', {
@@ -27,9 +29,9 @@ export
             });
         });
         return () => map && map.destroy();
-    }, []);
+    }, []);*/
 
-    return <div className='w-[60vw] max-md:w-[100vw] h-[50vh]'>
+    return <div className='w-[60vw] max-md:w-[100vw] h-[50vh] max-md:h-[100vw]'>
         <MapWrapper />
     </div>
   }
@@ -87,5 +89,12 @@ export
  * +")</script>
  * 
 
+
+
+const MapWrapper = React.memo(() => {
+        return <div id="map-container" style={{ width: '100%', height: '100%' }}></div>;
+    },
+    () => true,
+);
 
  */
